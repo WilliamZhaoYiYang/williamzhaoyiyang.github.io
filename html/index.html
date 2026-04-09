@@ -3,137 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
   <title>My Portfolio</title>
-
-  <style>
-    :root {
-      --bg: #0f172a;
-      --text: #f1f5f9;
-      --card: #1e293b;
-      --header: #020617;
-      --accent: #38bdf8;
-    }
-
-    body.light {
-      --bg: #f8fafc;
-      --text: #020617;
-      --card: #e2e8f0;
-      --header: #cbd5f5;
-      --accent: #2563eb;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      transition: background 0.3s, color 0.3s;
-    }
-
-    header {
-      padding: 20px;
-      text-align: center;
-      background: var(--header);
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .theme-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: var(--card);
-      border: none;
-      padding: 10px;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 18px;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .carousel {
-      position: relative;
-      overflow: hidden;
-      border-radius: 12px;
-    }
-
-    .slides {
-      display: flex;
-      transition: transform 0.6s ease-in-out;
-    }
-
-    .slide {
-      min-width: 100%;
-      box-sizing: border-box;
-      padding: 40px;
-      background: var(--card);
-      text-align: center;
-      border-radius: 12px;
-    }
-
-    .slide-img {
-    width: 100%;
-    max-height: 500px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    }
-
-    .slideText {
-        padding-right: 40px;
-        padding-left: 40px;
-        padding-bottom: 20px;
-    }
-
-    .buttons a {
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      background: var(--accent);
-      color: white;
-      font-weight: bold;
-    }
-
-    .nav-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0,0,0,0.2);
-      border: none;
-      color: white;
-      font-size: 24px;
-      padding: 10px;
-      cursor: pointer;
-    }
-
-    .prev { left: 10px; }
-    .next { right: 10px; }
-
-    .credentials {
-      margin-top: 40px;
-      background: var(--card);
-      padding: 20px;
-      border-radius: 12px;
-    }
-
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 1s forwards;
-    }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
 </head>
 <body>
 
@@ -143,13 +14,12 @@
 
 <div class="container">
 
-  <!-- Carousel -->
   <div class="carousel">
     <div class="slides" id="slides">
 
       <div class="slide">
         <h2>Road of Oz</h2>
-        <img src="./img/icon_RoZ.png" alt="Road of Oz screenshot" class="slide-img">
+        <img src="../img/icon_RoZ.png" alt="Road of Oz screenshot" class="slide-img">
         <div class="slideText">
         <p>A mobile step-tracking app built with React Native and Expo. Make your walks more enjoyable with journeys based on stories such as The Wizard of Oz
             or real life treks like the Tongariro Alpine Crossing, with events and landmarks along the way to keep you motiviated.</p>
@@ -161,7 +31,7 @@
 
       <div class="slide">
         <h2>Meddy</h2>
-        <img src="./img/icon_meddy.png" alt="Road of Oz screenshot" class="slide-img">
+        <img src="../img/icon_meddy.png" alt="Road of Oz screenshot" class="slide-img">
         <div class="slideText">
             <p> A mobile pharmaceutecal app that can scan or search up any medicine approved for supply on the New Zealand Universal List of Medicines database. 
                 I and my team worked on this app as a university project in collaboration with Medsafe, a medicial regulatory body run by the NZ Ministry of Health. 
@@ -178,7 +48,6 @@
     <button class="nav-btn next" onclick="nextSlide()">❯</button>
   </div>
 
-  <!-- Credentials Section -->
   <div class="credentials fade-in">
     <h3>About Me</h3>
     <p><strong>Education:</strong> Bachelor of Science in Computer Science at The University of Auckland</p>
