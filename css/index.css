@@ -20,6 +20,7 @@
       background: var(--bg);
       color: var(--text);
       transition: background 0.3s, color 0.3s;
+      min-height: 100vh;
     }
 
     header {
@@ -32,7 +33,7 @@
 
     .theme-toggle {
       position: fixed;
-      top: 20px;
+      top: 12px;
       right: 20px;
       background: var(--card);
       border: none;

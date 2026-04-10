@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/page.css">
+  <script src="../js/index.js" defer></script>
+  <script src="../js/page.js" defer></script>
+  <title>My Portfolio</title>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">🌙</button>
+  <header>William Zhao GitHub Portfolio</header>
+  <div class="container">
+    <div class="slide fade-in">
+
+    <h2>Meddy</h2>
+
+    <div class="slideText">
+      <p>
+        Meddy is a cross-platform mobile pharmaceutical app that allows users to search or scan medicines approved for supply in New Zealand.
+        By scanning a barcode or searching, users can instantly access detailed medicine information in a clear and digestible format.
+      </p>
+    </div>
+
+    <div class="image-grid">
+      <img src="../img/meddy1.jpg" alt="Screenshot 1">
+      <img src="../img/meddy2.jpg" alt="Screenshot 2">
+      <img src="../img/meddy3.jpg" alt="Screenshot 3">
+      <img src="../img/meddy4.jpg" alt="Screenshot 4">
+    </div>
+
+    <div class="credentials" style="margin-top: 20px;">
+      <h3>Key Features</h3>
+      <ul>
+        <li>Barcode scanning for medicine lookup</li>
+        <li>Search functionality for prescription medicines</li>
+        <li>Various accessiblity settings such as custom text size and text-to-speech  </li>
+        <li>Data sourced from official NZ medicine databases</li>
+      </ul>
+
+      <h3>Technologies Used</h3>
+      <p><strong>Frontend:</strong> Flutter (Dart)</p>
+      <p><strong>Backend/Data:</strong> Python</p>
+    </div>
+
+    <div id="imgModal" class="modal">
+      <span class="arrow left" onclick="prevImage(event)">❮</span>
+      <img class="modal-content" id="modalImg">
+      <span class="arrow right" onclick="nextImage(event)">❯</span>
+    </div>
+
+    </div>
+  </div>
+</body>
+</html>
