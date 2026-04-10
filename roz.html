@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/page.css">
+  <script src="./js/index.js" defer></script>
+  <script src="./js/page.js" defer></script>
+  <title>My Portfolio</title>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">🌙</button>
+  <header>William Zhao GitHub Portfolio</header>
+  <div class="container">
+    <div class="slide fade-in">
+
+    <h2>Road of OZ</h2>
+
+    <div class="slideText">
+    <p>
+        Road of OZ is a mobile step-tracking app built with React Native and Expo that turns everyday walking into an immersive journey.
+        Users can choose themed adventures inspired by stories like The Lord of the Rings or real-world treks, progressing through landmarks as they walk in real life.
+    </p>
+
+    <p>
+        The app tracks steps in real time using the device pedometer, even in the background, and rewards progress with unlockable events, notifications, and detailed journey stats to keep users motivated.
+    </p>
+    </div>
+
+    <div class="image-grid">
+      <img src="./img/roz1.jpg" alt="Screenshot 1">
+      <img src="./img/roz2.jpg" alt="Screenshot 2">
+      <img src="./img/roz3.jpg" alt="Screenshot 3">
+      <img src="./img/roz4.jpg" alt="Screenshot 4">
+      <img src="./img/roz5.jpg" alt="Screenshot 5">
+    </div>
+
+    <div class="credentials" style="margin-top: 20px;">
+    <h3>Key Features</h3>
+    <ul>
+        <li>Real-time step tracking using device pedometer (works in background)</li>
+        <li>Immersive journey system with themed routes and step goals</li>
+        <li>Landmark unlocking system with notifications and interactive popups</li>
+        <li>Animated step counter and progress tracking</li>
+        <li>7-day stats, distance tracking, and calorie estimation</li>
+        <li>Adjustable step sensitivity to filter inaccurate motion</li>
+    </ul>
+
+    <h3>Technologies Used</h3>
+    <p><strong>Frontend:</strong> React Native (Expo)</p>
+    <p><strong>State Management:</strong> React Context API</p>
+    <p><strong>APIs & Libraries:</strong> expo-sensors, expo-notifications, AsyncStorage</p>
+    <p><strong>Data Visualization:</strong> Victory Native, react-native-svg</p>
+    </div>
+
+    <div class="buttons">
+        <a href="https://github.com/WilliamZhaoYiYang/The-Yellow-Brick-Road" target="_blank">View Repo</a>
+    </div>
+
+    <div id="imgModal" class="modal">
+      <span class="arrow left" onclick="prevImage(event)">❮</span>
+      <img class="modal-content" id="modalImg">
+      <span class="arrow right" onclick="nextImage(event)">❯</span>
+    </div>
+
+    </div>
+  </div>
+</body>
+</html>
